@@ -1,0 +1,31 @@
+.profile-box {
+  position: absolute;
+  top: 26px;
+  right: 32px;
+  background: #222;
+  color: #ffd700;
+  border-radius: 30px;
+  padding: 8px 24px 8px 10px;
+  box-shadow: 0 3px 12px #0008;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  z-index: 99;
+}
+
+.profile-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffd700;
+}
+
+.profile-name {
+  font-size: 1.05rem;
+}
+.profile-box:hover {
+  box-shadow: 0 6px 20px #ffd70088;
+  background: #23226b;
+}

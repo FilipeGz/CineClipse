@@ -1,0 +1,97 @@
+/* Fundo escuro, com efeito de “cortina de cinema” */
+.login-bg {
+  min-height: 100vh;
+  height: 100dvh; /* cobre bem em mobile também */
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #161616 60%, #2d0b26 100%);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+/* Caixa central que lembra ingresso/cinema */
+.login-container {
+  background: rgba(30, 22, 34, 0.90);
+  max-width: 500px;
+  width: 100%;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2rem 16px;
+  box-sizing: border-box;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.44);
+  border: 3px solid #dab300;
+  position: relative;
+  z-index: 2;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: 'Cinecav X', 'Oswald', 'Impact', Arial, sans-serif;
+  color: #dab300;
+  margin-bottom: 1.7rem;
+  letter-spacing: 1.2px;
+  text-shadow: 2px 3px 12px #000;
+}
+
+.login-form label {
+  font-size: 1.07rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 90%;
+  padding: 0.67rem 1rem;
+  margin: 0.6rem 0 1.3rem 0;
+  border-radius: 10px;
+  border: 1.3px solid #dab300;
+  background: #1d1d1d;
+  color: #f4eede;
+  font-size: 1.07rem;
+  transition: border 0.19s;
+}
+.login-form input:focus {
+  outline: none;
+  border-color: #a1072e;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.82rem 0;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #a1072e 60%, #dab300 100%);
+  color: #fff;
+  font-size: 1.18rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 3px 20px 0 rgba(99,6,35,0.32);
+  transition: background 0.22s, box-shadow 0.22s;
+}
+.login-btn:hover {
+  background: linear-gradient(90deg, #dab300 40%, #a1072e 100%);
+  box-shadow: 0 5px 30px 0 rgba(128,0,21,0.33);
+}
+
+.login-error {
+  color: #ff5050;
+  background: #2c000a;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .login-container {
+    padding: 1.2rem 0.7rem;
+    border-width: 2px;
+    margin: 1.2rem 8px; 
+  }
+  .login-title {
+    font-size: 1.4rem;
+  }
+}

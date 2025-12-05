@@ -1,0 +1,171 @@
+/* ===== Fundo geral ===== */
+.profilepage-bg {
+  width: 100%;
+  min-height: 100vh;
+  background: #080808; /* fundo da sua tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* ===== Card principal ===== */
+.profilepage-container {
+  background: #1a1a1a;
+  width: 420px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative; /* NECESSÁRIO para o botão ficar dentro */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* ===== Botão VOLTAR ===== */
+.profilepage-backbtn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #ffe600;
+  color: black;
+  border: none;
+  padding: 10px 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.profilepage-backbtn:hover {
+  background-color: #fff26f;
+  transform: scale(1.05);
+}
+
+/* ===== Título ===== */
+.profilepage-title {
+  text-align: center;
+  color: #ffd700;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ===== Avatar ===== */
+.profilepage-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffd700;
+  margin: 0 auto 25px auto;
+  display: block;
+  box-shadow: 0 0 15px rgba(255, 230, 0, 0.5);
+}
+
+/* ===== Área principal ===== */
+.profilepage-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== Informações ===== */
+.profilepage-info {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.profilepage-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.profilepage-label {
+  color: #00ffbf;
+  font-weight: bold;
+}
+
+.profilepage-value {
+  color: white;
+}
+
+/* ===== Botões ===== */
+.profilepage-editbtn,
+.profilepage-addmoviebtn,
+.profilepage-logoutbtn,
+.profilepage-prodbtn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+/* EDITAR PERFIL */
+.profilepage-editbtn {
+  background: #ffe600;
+  color: black;
+}
+
+.profilepage-editbtn:hover {
+  background: #fff26f;
+  transform: scale(1.04);
+}
+
+/* ADICIONAR FILME */
+.profilepage-addmoviebtn {
+  background: linear-gradient(to right, #c40000, #ffaf00);
+  color: white;
+}
+
+.profilepage-addmoviebtn:hover {
+  transform: scale(1.04);
+}
+
+/* SAIR */
+.profilepage-logoutbtn {
+  background: #444;
+  color: #eee;
+}
+
+.profilepage-logoutbtn:hover {
+  background: #555;
+  transform: scale(1.04);
+}
+
+/* ÁREA DO PRODUTOR */
+.profilepage-prodbtn {
+  background: #000000;
+  color: white;
+}
+
+.profilepage-prodbtn:hover {
+  background: #000000;
+  transform: scale(1.04);
+}
+
+/* ===== Animação ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 500px) {
+  .profilepage-container {
+    width: 90%;
+  }
+
+  .profilepage-title {
+    font-size: 24px;
+  }
+
+  .profilepage-row {
+    font-size: 16px;
+  }
+}

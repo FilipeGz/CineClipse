@@ -1,0 +1,137 @@
+/* FUNDO */
+.produtor-bg {
+  width: 100%;
+  min-height: 100vh;
+  background: #080808;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+/* CAIXA PRINCIPAL */
+.produtor-container {
+  width: 600px;
+  background: #111;
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+/* BOTÃO VOLTAR COMO NO PROFILEPAGE */
+.produtor-backbtn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #ffe600;
+  color: black;
+  border: none;
+  padding: 10px 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.produtor-backbtn:hover {
+  background-color: #fff26f;
+  transform: scale(1.05);
+}
+
+/* TÍTULO */
+.produtor-title {
+  text-align: center;
+  color: #00ff80;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.produtor-form label {
+  color: #ffe600;
+  font-weight: bold;
+  display: block;
+  margin: 12px 0 5px;
+}
+
+.produtor-form input,
+.produtor-form textarea {
+  width: 100%;
+  background: #000;
+  border: 2px solid #ffd700;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* BOTÃO SUBMIT */
+.produtor-submitbtn {
+  width: 100%;
+  background: linear-gradient(to right, #c40000, #ffaf00);
+  color: white;
+  font-weight: bold;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.produtor-submitbtn:hover {
+  transform: scale(1.05);
+}
+
+/* CANCELAR */
+.produtor-cancelbtn {
+  width: 100%;
+  margin-top: 10px;
+  background: #802020;
+  color: white;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.produtor-cancelbtn:hover {
+  transform: scale(1.05);
+}
+
+/* LISTA DE FILMES */
+.produtor-filmes-lista {
+  margin-top: 40px;
+}
+
+.produtor-filme-card {
+  background: #0a0a0a;
+  border: 2px solid #0022ff;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 12px;
+  display: flex;
+  gap: 20px;
+}
+
+/* EDITAR / REMOVER */
+.produtor-edit {
+  background: #00ff88;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.produtor-remove {
+  background: #c40000;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
